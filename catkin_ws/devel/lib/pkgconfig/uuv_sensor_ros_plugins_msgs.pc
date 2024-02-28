@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/devel
+
+Name: uuv_sensor_ros_plugins_msgs
+Description: Description of uuv_sensor_ros_plugins_msgs
+Version: 0.6.8
+Cflags: -I/home/auviitk/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs message_runtime

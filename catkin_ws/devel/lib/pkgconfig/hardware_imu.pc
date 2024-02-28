@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/devel
+
+Name: hardware_imu
+Description: Description of hardware_imu
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_generation message_runtime roscpp rospy std_msgs

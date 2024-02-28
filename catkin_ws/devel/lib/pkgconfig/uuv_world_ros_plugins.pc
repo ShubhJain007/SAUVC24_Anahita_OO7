@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/devel
+
+Name: uuv_world_ros_plugins
+Description: Description of uuv_world_ros_plugins
+Version: 0.6.8
+Cflags: -I/home/auviitk/catkin_ws/src/uuv_simulator/uuv_world_plugins/uuv_world_ros_plugins/include
+Libs: -L${prefix}/lib -luuv_underwater_current_ros_plugin -luuv_sc_ros_interface_plugin
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/devel
+
+Name: uuv_thruster_manager
+Description: Description of uuv_thruster_manager
+Version: 0.6.8
+Cflags: -I/home/auviitk/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

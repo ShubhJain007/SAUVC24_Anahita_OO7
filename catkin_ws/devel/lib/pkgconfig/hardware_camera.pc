@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/devel
+
+Name: hardware_camera
+Description: Description of hardware_camera
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: usb_cam cv_bridge image_transport sensor_msgs

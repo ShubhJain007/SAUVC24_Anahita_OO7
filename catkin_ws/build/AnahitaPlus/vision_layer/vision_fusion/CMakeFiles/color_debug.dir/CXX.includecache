@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_fusion/include/fusion/color_constancy.hpp
+opencv2/highgui/highgui.hpp
+/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_fusion/include/fusion/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_fusion/include/fusion/opencv2/imgproc/imgproc.hpp
+iostream
+-
+stdio.h
+-
+
+/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_fusion/src/color_constancy_debug.cpp
+fusion/color_constancy.hpp
+-
+

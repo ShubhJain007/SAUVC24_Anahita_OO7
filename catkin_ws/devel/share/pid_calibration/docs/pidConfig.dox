@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~p" : \b [double] P turn parameter min: -200.0, default: 0.0, max: 200.0
+- \b "~i" : \b [double] I turn parameter min: -200.0, default: 0.0, max: 200.0
+- \b "~d" : \b [double] D turn parameter min: -200.0, default: 0.0, max: 200.0
+- \b "~target" : \b [double] Target parameter min: -1000.0, default: 0.0, max: 1000.0
+- \b "~band" : \b [double] Band turn parameter min: 0.0, default: 5.0, max: 100.0
+- \b "~send_goal" : \b [bool] Goal parameter min: False, default: False, max: True
+

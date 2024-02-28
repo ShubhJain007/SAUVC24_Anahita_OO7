@@ -1,0 +1,18 @@
+\subsubsection usage Usage
+\verbatim
+<node name="color_calibrate" pkg="color_calibration" type="color_calibrate">
+  <param name="r_min" type="int" value="0" />
+  <param name="r_max" type="int" value="255" />
+  <param name="g_min" type="int" value="0" />
+  <param name="g_max" type="int" value="255" />
+  <param name="b_min" type="int" value="0" />
+  <param name="b_max" type="int" value="255" />
+  <param name="opening_mat_point" type="int" value="1" />
+  <param name="opening_iter" type="int" value="3" />
+  <param name="closing_mat_point" type="int" value="1" />
+  <param name="closing_iter" type="int" value="0" />
+  <param name="bilateral_iter" type="int" value="0" />
+  <param name="save_params" type="bool" value="False" />
+</node>
+\endverbatim
+

@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uuv_control_msgs_generate_messages_lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/msg/Trajectory.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/msg/TrajectoryPoint.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/msg/Waypoint.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/msg/WaypointSet.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/SwitchToManual.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/StallVehicle.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/AddWaypoint.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/StartTrajectory.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/ClearWaypoints.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GetWaypoints.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GoToPose.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/InitWaypointSet.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/SetMBSMControllerParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/InitWaypointsFromFile.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GetSMControllerParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/IsRunningTrajectory.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/InitHelicalTrajectory.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/ResetController.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GoTo.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/TrajectoryComplete.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GoToIncremental.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/PoseReach.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/FrontSearch.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/InitCircularTrajectory.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GetPIDParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/CancelRequest.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/SwitchToAutomatic.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/SetSMControllerParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/SetPIDParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/BottomSearch.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/Hold.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/GetMBSMControllerParams.lisp"
+  "/home/auviitk/catkin_ws/devel/share/common-lisp/ros/uuv_control_msgs/srv/InitRectTrajectory.lisp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/uuv_control_msgs_generate_messages_lisp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

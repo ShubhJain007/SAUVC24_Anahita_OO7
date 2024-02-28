@@ -1,0 +1,8 @@
+prefix=/home/auviitk/catkin_ws/install
+
+Name: vision_commons
+Description: Description of vision_commons
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lvision_commons
+Requires: 

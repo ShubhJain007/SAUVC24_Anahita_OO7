@@ -1,0 +1,10 @@
+(cl:defpackage xsens_driver-srv
+  (:use )
+  (:export
+   "RESETIMUORIENT"
+   "<RESETIMUORIENT-REQUEST>"
+   "RESETIMUORIENT-REQUEST"
+   "<RESETIMUORIENT-RESPONSE>"
+   "RESETIMUORIENT-RESPONSE"
+  ))
+

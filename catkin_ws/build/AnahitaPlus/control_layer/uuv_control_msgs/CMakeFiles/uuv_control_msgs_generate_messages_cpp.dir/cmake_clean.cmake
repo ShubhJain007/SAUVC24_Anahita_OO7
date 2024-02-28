@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/uuv_control_msgs_generate_messages_cpp"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/Trajectory.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/TrajectoryPoint.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/Waypoint.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/WaypointSet.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/SwitchToManual.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/StallVehicle.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/AddWaypoint.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/StartTrajectory.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/ClearWaypoints.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GetWaypoints.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GoToPose.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/InitWaypointSet.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/SetMBSMControllerParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/InitWaypointsFromFile.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GetSMControllerParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/IsRunningTrajectory.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/InitHelicalTrajectory.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/ResetController.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GoTo.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/TrajectoryComplete.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GoToIncremental.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/PoseReach.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/FrontSearch.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/InitCircularTrajectory.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GetPIDParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/CancelRequest.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/SwitchToAutomatic.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/SetSMControllerParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/SetPIDParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/BottomSearch.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/Hold.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/GetMBSMControllerParams.h"
+  "/home/auviitk/catkin_ws/devel/include/uuv_control_msgs/InitRectTrajectory.h"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/uuv_control_msgs_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

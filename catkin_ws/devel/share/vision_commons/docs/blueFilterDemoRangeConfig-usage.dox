@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="vision_commons" pkg="vision_commons" type="vision_commons">
+  <param name="clahe_clip" type="double" value="0.15" />
+  <param name="clahe_grid_size" type="int" value="3" />
+  <param name="clahe_bilateral_iter" type="int" value="2" />
+  <param name="balanced_bilateral_iter" type="int" value="2" />
+  <param name="denoise_h" type="double" value="10.0" />
+</node>
+\endverbatim
+
