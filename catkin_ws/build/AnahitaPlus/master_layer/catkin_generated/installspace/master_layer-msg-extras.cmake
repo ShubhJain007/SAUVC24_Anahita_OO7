@@ -1,2 +1,0 @@
-set(master_layer_MESSAGE_FILES "msg/Waypoint.msg;msg/Thrust.msg;msg/Depth.msg;msg/Pressure.msg")
-set(master_layer_SERVICE_FILES "srv/CurrentTask.srv;srv/ChangeOdom.srv;srv/GoToIncremental.srv;srv/GoTo.srv;srv/GoToPose.srv;srv/VerifyObject.srv;srv/InitCircularTrajectory.srv;srv/Hold.srv;srv/TrajectoryComplete.srv;srv/PoseReach.srv;srv/ChangeTorpedoHole.srv;srv/RequestMarkerAngle.srv;srv/PingerBottomTarget.srv;srv/PingerFrontTarget.srv;srv/TargetNormal.srv;srv/GetMaxDepth.srv;srv/GetBlackoutTime.srv")

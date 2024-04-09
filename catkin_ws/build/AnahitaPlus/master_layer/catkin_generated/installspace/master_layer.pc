@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/install
-
-Name: master_layer
-Description: Description of master_layer
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -laction_servers
-Requires: actionlib actionlib_msgs message_generation roscpp rospy std_msgs geometry_msgs task_handler_layer motion_layer anahita_msgs

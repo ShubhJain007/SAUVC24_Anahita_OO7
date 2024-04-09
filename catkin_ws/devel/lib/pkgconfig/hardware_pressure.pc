@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/devel
-
-Name: hardware_pressure
-Description: Description of hardware_pressure
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp std_msgs sensor_msgs

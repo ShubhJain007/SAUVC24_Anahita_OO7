@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/devel
-
-Name: teledyne_navigator
-Description: Description of teledyne_navigator
-Version: 0.1.0
-Cflags: -I/home/auviitk/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs message_generation message_runtime rospy std_msgs

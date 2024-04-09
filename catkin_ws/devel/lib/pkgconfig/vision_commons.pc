@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/devel
-
-Name: vision_commons
-Description: Description of vision_commons
-Version: 1.0.0
-Cflags: -I/home/auviitk/catkin_ws/devel/include -I/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_commons/include -I/home/auviitk/catkin_ws/src/AnahitaPlus/vision_layer/vision_commons/helper_nodes
-Libs: -L${prefix}/lib -lvision_commons
-Requires: 

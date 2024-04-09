@@ -1,7 +1,0 @@
-set(color_calibration_SETUP_PY_SETUP_MODULE "distutils.core")
-set(color_calibration_SETUP_PY_VERSION "0.0.0")
-set(color_calibration_SETUP_PY_SCRIPTS "")
-set(color_calibration_SETUP_PY_PACKAGES "")
-set(color_calibration_SETUP_PY_PACKAGE_DIRS "")
-set(color_calibration_SETUP_PY_MODULES "")
-set(color_calibration_SETUP_PY_MODULE_DIRS "")

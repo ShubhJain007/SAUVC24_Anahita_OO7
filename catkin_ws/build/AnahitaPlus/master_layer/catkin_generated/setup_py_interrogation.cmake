@@ -1,7 +1,0 @@
-set(master_layer_SETUP_PY_SETUP_MODULE "distutils.core")
-set(master_layer_SETUP_PY_VERSION "0.0.0")
-set(master_layer_SETUP_PY_SCRIPTS "")
-set(master_layer_SETUP_PY_PACKAGES "master_layer")
-set(master_layer_SETUP_PY_PACKAGE_DIRS "src/master_layer")
-set(master_layer_SETUP_PY_MODULES "")
-set(master_layer_SETUP_PY_MODULE_DIRS "")

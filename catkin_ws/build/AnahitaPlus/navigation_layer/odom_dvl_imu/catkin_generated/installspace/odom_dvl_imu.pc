@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/install
-
-Name: odom_dvl_imu
-Description: Description of odom_dvl_imu
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp message_runtime std_msgs

@@ -1,2 +1,0 @@
-set(uuv_thruster_manager_MESSAGE_FILES "")
-set(uuv_thruster_manager_SERVICE_FILES "/home/auviitk/catkin_ws/src/AnahitaPlus/control_layer/uuv_thruster_manager/srv/GetThrusterCurve.srv;/home/auviitk/catkin_ws/src/AnahitaPlus/control_layer/uuv_thruster_manager/srv/ThrusterManagerInfo.srv;/home/auviitk/catkin_ws/src/AnahitaPlus/control_layer/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv;/home/auviitk/catkin_ws/src/AnahitaPlus/control_layer/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv")

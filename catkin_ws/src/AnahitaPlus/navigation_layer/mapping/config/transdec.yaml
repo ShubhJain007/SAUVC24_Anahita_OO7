@@ -1,8 +1,0 @@
-map:
-  gate:  
-    x: 5
-    y: 5
-
-  torpedo:
-    x: 10
-    y: 2  

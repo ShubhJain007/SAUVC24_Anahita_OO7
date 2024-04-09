@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/install
-
-Name: motion_layer
-Description: Description of motion_layer
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -lheavePIDServer -lswayPIDServer -lsurgePIDServer -lyawPIDServer -lpitchPIDServer -lrollPIDServer
-Requires: actionlib actionlib_msgs roscpp rospy std_msgs message_generation

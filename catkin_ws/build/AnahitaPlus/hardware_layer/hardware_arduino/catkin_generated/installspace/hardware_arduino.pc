@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/install
-
-Name: hardware_arduino
-Description: Description of hardware_arduino
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy std_msgs anahita_msgs

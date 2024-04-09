@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/install
-
-Name: xsens_driver
-Description: Description of xsens_driver
-Version: 2.2.2
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: rospy std_msgs tf sensor_msgs geometry_msgs diagnostic_msgs

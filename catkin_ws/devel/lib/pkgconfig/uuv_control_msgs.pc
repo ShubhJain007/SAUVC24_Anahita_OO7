@@ -1,8 +1,0 @@
-prefix=/home/auviitk/catkin_ws/devel
-
-Name: uuv_control_msgs
-Description: Description of uuv_control_msgs
-Version: 0.6.8
-Cflags: -I/home/auviitk/catkin_ws/devel/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs message_runtime

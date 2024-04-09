@@ -1,7 +1,0 @@
-set(teledyne_navigator_SETUP_PY_SETUP_MODULE "distutils.core")
-set(teledyne_navigator_SETUP_PY_VERSION "0.1.0")
-set(teledyne_navigator_SETUP_PY_SCRIPTS "")
-set(teledyne_navigator_SETUP_PY_PACKAGES "teledyne_navigator")
-set(teledyne_navigator_SETUP_PY_PACKAGE_DIRS "src/teledyne_navigator")
-set(teledyne_navigator_SETUP_PY_MODULES "")
-set(teledyne_navigator_SETUP_PY_MODULE_DIRS "")
