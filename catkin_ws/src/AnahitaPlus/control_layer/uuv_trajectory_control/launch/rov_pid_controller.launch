@@ -33,13 +33,13 @@
   <arg name="tam_file" default="$(find uuv_thruster_manager)/config/$(arg model_name)/TAM.yaml"/>
 
   <!-- Start the thruster allocation manager -->
-  <include file="$(find uuv_thruster_manager)/launch/thruster_manager.launch">
+  <!--<include file="$(find uuv_thruster_manager)/launch/thruster_manager.launch">
      <arg name="uuv_name" value="$(arg uuv_name)" />
      <arg name="model_name" value="$(arg model_name)" />
      <arg name="output_dir" value="$(arg thruster_manager_output_dir)" />
      <arg name="config_file" value="$(arg thruster_manager_config_file)" />
      <arg name="tam_file" value="$(arg tam_file)" />
-   </include>
+   </include>-->
 
   <!-- This node just reads the trajectory and waypoint topics and publishes
        visualization markers for RViz -->
@@ -69,7 +69,7 @@
         <remap from="waypoints" to="dp_controller/waypoints"/>
         <remap from="error" to="dp_controller/error"/>
         <remap from="reference" to="dp_controller/reference"/>
-        <remap from="thruster_output" to="thruster_manager/input_stamped"/>
+        <remap from="thruster_output" to="thruster_manager/input"/>
         <rosparam file="$(arg controller_config_file)" command="load"/>
         <rosparam subst_value="true">
           inertial_frame_id: world_ned
@@ -88,7 +88,7 @@
         <remap from="waypoints" to="dp_controller/waypoints"/>
         <remap from="error" to="dp_controller/error"/>
         <remap from="reference" to="dp_controller/reference"/>
-        <remap from="thruster_output" to="thruster_manager/input_stamped"/>
+        <remap from="thruster_output" to="thruster_manager/input"/>
         <rosparam file="$(arg controller_config_file)" command="load"/>
         <rosparam subst_value="true">
           inertial_frame_id: world
@@ -111,7 +111,7 @@
         <remap from="waypoints" to="dp_controller/waypoints"/>
         <remap from="error" to="dp_controller/error"/>
         <remap from="reference" to="dp_controller/reference"/>
-        <remap from="thruster_output" to="thruster_manager/input_stamped"/>
+        <remap from="thruster_output" to="thruster_manager/input"/>
         <!-- Controller parameters -->
         <rosparam subst_value="true">
           saturation: $(arg saturation)
@@ -134,7 +134,7 @@
         <remap from="waypoints" to="dp_controller/waypoints"/>
         <remap from="error" to="dp_controller/error"/>
         <remap from="reference" to="dp_controller/reference"/>
-        <remap from="thruster_output" to="thruster_manager/input_stamped"/>
+        <remap from="thruster_output" to="thruster_manager/input"/>
         <!-- Controller parameters -->
         <rosparam subst_value="true">
           saturation: $(arg saturation)

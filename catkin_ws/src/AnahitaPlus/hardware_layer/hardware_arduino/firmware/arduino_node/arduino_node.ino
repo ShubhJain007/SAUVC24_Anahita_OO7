@@ -1,5 +1,5 @@
+
 //#include <Arduino.h>
-//#include <Wire.h>
 //#include <Servo.h>
 //#include <MS5837.h>
 //
@@ -28,16 +28,16 @@
 #include <Servo.h>
 #include <MS5837.h>
 
-#define servoEastPin 4       // pin definitions for forward thrusters
-#define servoWestPin 6
+#define servoEastPin 6       // pin definitions for forward thrusters
+#define servoWestPin 3
 
-#define servoNorthSwayPin 3// pin definitions for sideward thrusters
+#define servoNorthSwayPin 4// pin definitions for sideward thrusters
 #define servoSouthSwayPin 5 //
 //31 30 32 33
-#define servoNorthWestUpPin 9// pin definitions for upward thrusters
-#define servoSouthWestUpPin 8
-#define servoNorthEastUpPin 10 
-#define servoSouthEastUpPin 11
+#define servoNorthWestUpPin 10// pin definitions for upward thrusters
+#define servoSouthWestUpPin 11
+#define servoNorthEastUpPin 9 
+#define servoSouthEastUpPin 8
 
 Servo servoEast;
 Servo servoWest;
@@ -98,7 +98,8 @@ void setup()
 //      // Waiting for a connection to be generated, needed for delays caused by USB
 //    }
     Serial.println("1");
-//    message.reserve(200);
+    message.reserve(200);
+//    Serial.println("2");
 //    //reserving initial length, strings are a headache in C
 //
     servoEast.attach(servoEastPin);
@@ -121,22 +122,21 @@ void setup()
     servoSouthWestUp.writeMicroseconds(ESC_Zero);
     servoSouthEastUp.attach(servoSouthEastUpPin);
     servoSouthEastUp.writeMicroseconds(ESC_Zero);
-    delay(1000);
-
+    delay(7000);
+    Serial.println("3");
     // setting up pressure sensor
-//    Wire.begin();
+     Wire.begin();
     // We can't continue with the rest of the program unless we can initialize the sensor
-     pressure_sensor.setModel(MS5837::MS5837_30BA);
-//    pressure_sensor.init() ;
-     pressure_sensor.setFluidDensity(997);
+//     pressure_sensor.init() ;
+//     pressure_sensor.setFluidDensity(997);
     
-//    while(!pressure_sensor.init())
-//    {
-//        Serial.println("Pressure sensor failed");
-//    }
-   
-     
-//    pressure_sensor.setFluidDensity(997);    //kg/m^3 (freshwater, 1029 for seawater)*/ 
+    while(!pressure_sensor.init())
+    {
+        Serial.println("Pressure sensor failed");
+    }
+//    delay(2000); 
+    pressure_sensor.setModel(MS5837::MS5837_30BA); 
+    pressure_sensor.setFluidDensity(997);    //kg/m^3 (freshwater, 1029 for seawater)*/ 
     Serial.println("Setup Done");  
 }
 
@@ -145,16 +145,18 @@ void loop()
     static unsigned long prev_pressure_time = 0;
 
      //this block publishes the pressure sensor data based on defined rate
-//    if ((millis() - prev_pressure_time) >= (1000 / PRESSURE_PUBLISH_RATE))
-//    {
-//        // publish_pressure_data();
+    if ((millis() - prev_pressure_time) >= (1000 / PRESSURE_PUBLISH_RATE))
+    {  
+        // publish_pressure_data();
 //        read_pressure_data();
-//        prev_pressure_time = millis();
-//    }
-    
-    delay(67);
+//        sensorLoop();
+        prev_pressure_time = millis();
+    }
+//    Serial.println("4");
+     delay(67);
     //Just calling the two loops which will handle i/o as well
-    sensorLoop();    
+    sensorLoop(); 
+//       Serial.println("5");
     actuatorLoop();
     
   //  led.writeMicroseconds(1100);
@@ -201,6 +203,7 @@ void actuatorLoop(){
 //    Serial.print("YES");
 //    Serial.println(splitMessages[3] + "," + splitMessages[2] + "," + splitMessages[0] + "," + splitMessages[1] + ","  + splitMessages[4] + ","  + splitMessages[5] + ","  + splitMessages[6] + "," + splitMessages[7] + ","); 
 //    TEast(-splitMessages[3].toInt());
+//    if(splitMessages[0] != "0"){return;}
     TEast(-splitMessages[3].toInt());
 
     TWest(-splitMessages[2].toInt());
@@ -218,10 +221,10 @@ void sensorLoop(){
 
   //Using the idea of printing data in CSV format
   //
-//  read_pressure_data();
+  read_pressure_data();
   Serial.print(batt_voltage);
-//  Serial.print(',');
-//  Serial.print(depth_reading);
+  Serial.print(',');
+  Serial.print(depth_reading);
   Serial.print('\n');
 
   // Wait until done writing.
@@ -239,7 +242,7 @@ void read_pressure_data()
     *  liquids only. Uses density that is set for fresh or seawater.
     */
     depth_reading = pressure_sensor.depth();//convert to centimeters
-//    depth_reading = depth_reading + 10.36;  
+//    depth_reading = depth_reading + 0.04 ;  
 //    Serial.println(depth_reading);
     batt_voltage = 0.0;
     

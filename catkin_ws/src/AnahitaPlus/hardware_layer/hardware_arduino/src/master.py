@@ -23,18 +23,18 @@ if __name__ == '__main__':
     rospy.init_node('handle_arduino')
     
     rospy.Subscriber("/pwm", Thrust, callback)
- #   depth_publisher = rospy.Publisher("/anahita/depth", Float32, queue_size=10)
+    depth_publisher = rospy.Publisher("/anahita/depth", Float32, queue_size=10)
     bat_voltage_pub = rospy.Publisher("/anahita/battery_voltage", Float32, queue_size=10)
 
-    serial_port_id = rospy.get_param("~serial_port_id", "/dev/ttyACM0")
+    serial_port_id = rospy.get_param("~serial_port_id", "/dev/ttyUSB1")
     baud_rate = rospy.get_param("~baud_rate", 115200)
 
- #  depth_msg = Float32()
+    depth_msg = Float32()
     bat_voltage_msg = Float32()   
 
     # Initialize the serial connection
     try:
-        serial_connection = serial.Serial("/dev/ttyACM0", 115200, timeout=5)
+        serial_connection = serial.Serial("/dev/ttyUSB1", 115200, timeout=5)
         rospy.sleep(2)
         
     except:
@@ -48,7 +48,7 @@ if __name__ == '__main__':
             pwm_msg = pwm_str.encode('utf-8')
             serial_connection.write(pwm_msg)
             rospy.loginfo(pwm_str)
-            rospy.sleep(0.067)
+            rospy.sleep(0.100)
 
             # Serial read section
             msg = serial_connection.read(serial_connection.inWaiting()) # read all characters in buffer
@@ -60,9 +60,9 @@ if __name__ == '__main__':
                 print("Data:" + str(data))
                 bat_voltage_msg.data = data[0]                
                 rospy.loginfo("Battery Voltage: " + str(bat_voltage_msg))
-#                depth_msg.data = data[1]
-#                rospy.loginfo("Depth: " + str(depth_msg))
-#                depth_publisher.publish(depth_msg)
+                depth_msg.data = data[1]
+                rospy.loginfo("Depth: " + str(depth_msg))
+                depth_publisher.publish(depth_msg)
                 bat_voltage_pub.publish(bat_voltage_msg)
             except:
                 rospy.loginfo("Error in incoming values")

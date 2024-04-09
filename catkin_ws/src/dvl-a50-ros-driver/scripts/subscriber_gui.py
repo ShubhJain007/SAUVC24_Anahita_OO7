@@ -71,7 +71,7 @@ def callback(data):
 	twist_msg.twist.twist.linear.y = data.velocity.y/(2**0.5)-data.velocity.x/(2**0.5);
 	twist_msg.twist.twist.linear.z = data.velocity.z
 	twist_pub.publish(twist_msg)
-	depth_pub.publish(data.altitude-1.0)
+	#depth_pub.publish(data.altitude-1.0)
 	
 	
 def subscriber():
@@ -248,7 +248,7 @@ label_beamValid3.config(font=("Courier", 15))
 	
 if __name__ == '__main__':
 	twist_pub = rospy.Publisher("/anahita/dvl_twist", TwistWithCovarianceStamped, queue_size=10)
-	depth_pub = rospy.Publisher("/anahita/depth", Float32, queue_size=10)
+#	depth_pub = rospy.Publisher("/anahita/depth", Float32, queue_size=10)
 	subscriber()
 	
 	

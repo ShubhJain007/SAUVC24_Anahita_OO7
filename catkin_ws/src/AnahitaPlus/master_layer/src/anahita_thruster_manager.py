@@ -83,14 +83,14 @@ class AnahitaThrusterManager(object):
 
         
 
-	pwm.forward_left = int(self.compute_pwm(self.thrust[1]))
+	pwm.forward_left = -int(self.compute_pwm(self.thrust[1]))
         pwm.forward_right = int(self.compute_pwm(self.thrust[0]))
         pwm.sideward_back = int(self.compute_pwm(self.thrust[3]))
         pwm.sideward_front = int(self.compute_pwm(self.thrust[2]))
-        pwm.upward_north_east = int(self.compute_pwm(self.thrust[6]))
-        pwm.upward_north_west = int(self.compute_pwm(self.thrust[5]))
-        pwm.upward_south_east = int(self.compute_pwm(self.thrust[7]))
-        pwm.upward_south_west = int(self.compute_pwm(self.thrust[4]))
+        pwm.upward_north_east = -int(self.compute_pwm(self.thrust[6]))
+        pwm.upward_north_west = -int(self.compute_pwm(self.thrust[5]))
+        pwm.upward_south_east = -int(self.compute_pwm(self.thrust[7]))
+        pwm.upward_south_west = -int(self.compute_pwm(self.thrust[4]))
 	print("chapa")
         self.pwm_pub.publish(pwm)
 
